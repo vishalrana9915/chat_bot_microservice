@@ -41,9 +41,9 @@ config.dbConfig(config.cfg, (err) => {
     //require("./lib/post")(app);
 
     // start server
-     var server = app.listen(config.cfg.port);
+   app.listen(config.cfg.port);
 
      //setting socket object
-        require("./lib/socket/socketHandler.js")(server);
+        // require("./lib/socket/socketHandler.js")(server);
 
 });
